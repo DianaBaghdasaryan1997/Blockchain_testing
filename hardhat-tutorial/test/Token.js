@@ -106,5 +106,5 @@ describe("Transactions", function () {
       hardhatToken.connect(addr2).transfer(addr1.address, 50)
     ).to.be.revertedWith("Not enough tokens");
   });
- })
-})
+ });
+});
