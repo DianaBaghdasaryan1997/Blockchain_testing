@@ -37,7 +37,6 @@ describe("Token contract", function () {
       expect(await hardhatToken.balanceOf(addr2.address)).to.equal(0);
       expect(await hardhatToken.balanceOf(addr3.address)).to.equal(0);
     });
-
   });
 
 // Test suite 2
