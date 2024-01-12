@@ -94,7 +94,7 @@ Execute your deployment script with:
 npx hardhat run scripts/deploy.js --network yourDeploymentNetwork
 ```
 
-I deployed a smart contract to the Sepolia testnet using Infura for Ethereum node communication. To achieve this, I created a MetaMask account, registered for an Infura account, and obtained the necessary private keys for the deployment. Before deploying on Sopel, I sent some Sepolia ether to the address that performed the deployment. Testnet ether for Sepolia can be obtained from a faucet, a service that distributes testing-ETH for free. I use Infura Sepolia Faucet. 
+I deployed a smart contract to the Sepolia testnet using Infura for Ethereum node communication. To achieve this, I created a MetaMask account, registered for an Infura account, and obtained the necessary private keys for the deployment. Before deploying on Sepolia, I sent some Sepolia ether to the address that performed the deployment. Testnet ether for Sepolia can be obtained from a faucet, a service that distributes testing-ETH for free. I use Infura Sepolia Faucet. 
 
 
 
