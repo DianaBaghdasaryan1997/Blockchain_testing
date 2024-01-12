@@ -58,10 +58,10 @@ To run the tests, use the following command:
 ```bash
 npx hardhat test
 
-## Code coverage
 To see a measure in percent of the degree to which the smart contract source code is executed when a particular test suite is run, type
 
-npm run coverage
+```bash
+npx run coverage
 
 # Deployment
 
