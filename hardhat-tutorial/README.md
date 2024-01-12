@@ -27,12 +27,33 @@ contracts/Token.sol      -Solidity source code file defining  a smart contract's
 tests/Token.js           -JavaScript test file containing test cases to validate the contract's functionality.
 scripts/deploy.js        -JavaScript deployment script for deploying a smart contract to the Ethereum blockchain
 
-# Test
-Tests are located in the [test](./test/) directory.
-To run unit tests:
 
-```
+
+
+## Test
+Tests are located in the [test](./test/) directory.
+
+### Test Suite 1: Deployment
+
+- **Test Case 1:** Should set the right owner.
+- **Test Case 2:** Should assign the total supply of tokens to the owner.
+- **Test Case 3:** Should set the right initial balances.
+
+### Test Suite 2: Token Metadata
+
+- **Test Case 1:** Should have correct name and symbol after deployment.
+
+### Test Suite 3: Transactions
+
+- **Test Case 1:** Should transfer tokens between accounts.
+- **Test Case 2:** Should emit Transfer events.
+- **Test Case 3:** Should not allow owner to transfer more than total supply.
+- **Test Case 4:** Should fail if sender doesn't have enough tokens.
+- **Test Case 5:** Should prevent non-owner from transferring tokens from owner's account.
+
+To run the tests, use the following command:
+
+```bash
 npx hardhat test
-```
 
 
