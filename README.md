@@ -16,9 +16,3 @@ node_modules/:            Directory containing installed npm packages; managed a
 contracts/Token.sol:      Solidity source code file defining  a smart contract's behavior.
 tests/Token.js:           JavaScript test file containing test cases to validate the contract's functionality.
 scripts/deploy.js:        JavaScript deployment script for deploying a smart contract to the Ethereum blockchain
-
-
-
-
-
-
