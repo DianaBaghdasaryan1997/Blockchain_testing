@@ -32,8 +32,6 @@ You can find detailed instructions on using this repository and many tips in [it
 - **`scripts/deploy.js`**: This JavaScript deployment script is responsible for deploying the smart contract to the Ethereum blockchain.
 
 
-
-
 ## Test
 Tests are located in the [test](./test/) directory.
 
@@ -59,5 +57,33 @@ To run the tests, use the following command:
 
 ```bash
 npx hardhat test
+
+## Deployment
+
+To deploy your contract, follow these steps:
+
+1. **Update `hardhat.config.js`:**
+   Open `hardhat.config.js` and add a network entry for your deployment network, specifying the URL and accounts:
+
+   ```javascript
+   module.exports = {
+     networks: {
+       hardhat: {
+         // Your local Hardhat network configuration (if used for testing)
+       },
+       yourDeploymentNetwork: {
+         url: "https://YOUR_NODE_URL",
+         accounts: ["0xYOUR_PRIVATE_KEY"],
+       },
+     },
+     // Other configurations...
+   };
+
+Execute your deployment script with:
+
+```bash
+npx hardhat run scripts/deploy.js --network yourDeploymentNetwork
+
+I deployed a smart contract to the Sepolia testnet using Infura for Ethereum node communication. To achieve this, I created a MetaMask account, registered for an Infura account, and obtained the necessary private keys for the deployment. Before deploying on Sopel, I sent some Sepolia ether to the address that performed the deployment. Testnet ether for Sepolia can be obtained from a faucet, a service that distributes testing-ETH for free. I use Infura Sepolia Faucet. 
 
 
