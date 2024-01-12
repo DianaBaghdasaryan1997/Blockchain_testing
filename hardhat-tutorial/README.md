@@ -58,12 +58,16 @@ To run the tests, use the following command:
 ```bash
 npx hardhat test
 
-To see a measure in percent of the degree to which the smart contract source code is executed when a particular test suite is run, type
+```
+
+To see a measure in percent of the degree to which the smart contract source code is executed when a particular test suite is run
 
 ```bash
-npx run coverage
+npx hardhat coverage
 
-# Deployment
+```
+
+# Deployment 
 
 To deploy your contract, follow these steps:
 
@@ -88,8 +92,17 @@ Execute your deployment script with:
 
 ```bash
 npx hardhat run scripts/deploy.js --network yourDeploymentNetwork
+```
 
 I deployed a smart contract to the Sepolia testnet using Infura for Ethereum node communication. To achieve this, I created a MetaMask account, registered for an Infura account, and obtained the necessary private keys for the deployment. Before deploying on Sopel, I sent some Sepolia ether to the address that performed the deployment. Testnet ether for Sepolia can be obtained from a faucet, a service that distributes testing-ETH for free. I use Infura Sepolia Faucet. 
+
+
+
+
+
+
+
+
 
 
 
