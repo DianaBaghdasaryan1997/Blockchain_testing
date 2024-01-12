@@ -17,15 +17,19 @@ You can find detailed instructions on using this repository and many tips in [it
 - [Setting up your wallet](https://hardhat.org/tutorial/boilerplate-project#how-to-use-it)
 - [Hardhat's full documentation](https://hardhat.org/docs/)
 
-# Project Structure
+## Project Overview
 
-hardhat.config.js        -Configuration file specifying settings for the Hardhat development environment.
-package-lock.json        -Auto-generated file ensuring consistent versions of npm package dependencies for the project.
-package.json             -npm package configuration file listing project metadata, dependencies, and scripts.
-node_modules/            -Directory containing installed npm packages; managed automatically by npm.
-contracts/Token.sol      -Solidity source code file defining  a smart contract's behavior.
-tests/Token.js           -JavaScript test file containing test cases to validate the contract's functionality.
-scripts/deploy.js        -JavaScript deployment script for deploying a smart contract to the Ethereum blockchain
+- **`hardhat.config.js`**: This file contains the configuration settings for the Hardhat development environment, specifying network settings, compiler versions, and more.
+
+- **`package-lock.json` and `package.json`**: These files manage project dependencies and configurations. `package-lock.json` ensures consistent versions of npm package dependencies.
+
+- **`node_modules/`**: This directory contains the installed npm packages, managed automatically by npm.
+
+- **`contracts/Token.sol`**: This Solidity source code file defines the behavior of a smart contract, presumably an ERC-20 token in this case.
+
+- **`tests/Token.js`**: This JavaScript test file contains test cases to validate the functionality of the smart contract. It uses Hardhat's testing framework.
+
+- **`scripts/deploy.js`**: This JavaScript deployment script is responsible for deploying the smart contract to the Ethereum blockchain.
 
 
 
