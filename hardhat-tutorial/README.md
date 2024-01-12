@@ -60,7 +60,7 @@ npx hardhat test
 
 ```
 
-To see a measure in percent of the degree to which the smart contract source code is executed when a particular test suite is run
+To generate a coverage report for your Smart Contracts using Hardhat, use the following command:
 
 ```bash
 npx hardhat coverage
