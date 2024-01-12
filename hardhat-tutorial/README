@@ -7,6 +7,10 @@ The process includes setting up the development environment, writing
 a simple smart contract, creating tests to ensure the contract behaves 
 as expected, and finally deploying the contract to the Ethereum blockchain.
 
+# Getting Started
+It's recommended that you've gone through the hardhat getting started documentation before proceeding here.
+
+
 # Project Structure
 
 hardhat.config.js:        Configuration file specifying settings for the Hardhat development environment.
